@@ -17,11 +17,18 @@
 body, html {
     background-color: #17181c;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .nav-element-link {
     font-size: 1.25rem;
     padding: 0.8rem 1rem;
+}
+
+.nav-buttons {
+    position: absolute;
+    right: 0;
+    margin-right: 5rem;
 }
 
 .nav-element-link:hover,
@@ -32,7 +39,6 @@ body, html {
 
 .navigation {
     background: rgb(28, 28, 28);
-    padding: 0.5rem 5rem;
     text-align: center;
 }
 
@@ -59,11 +65,13 @@ body, html {
     gap: 1rem;
     flex-grow: 1;
     flex-wrap: nowrap;
+    padding: 0.5rem 5rem;
 }
 
 .logo p {
     left: 4.5rem;
     font-size: 1.25rem;
+    padding: 0.5rem 5rem;
 }
 
 .nav-logo {
@@ -103,6 +111,65 @@ body, html {
     padding-bottom: 0px;
 }
 
+.footer {
+    background-color: #17181c;
+    position: sticky;
+    bottom: 0;
+}
+
 .copyright {
-    padding: 1rem;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.icon-text {
+    margin-left: 30px;
+}
+
+.burgermenu {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .nav-buttons,
+    .nav-buttons > * {
+        opacity: 0;
+        max-width: 0px;
+        max-height: 0px;
+        left: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon-text {
+        margin-left: 0px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .nav-logo {
+        width: calc(128px / 1.8);
+    }
+    
+    .burgermenu {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 23px;
+    }
+
+    .burgermenu > img {
+        width: 42px;
+    }
 }
