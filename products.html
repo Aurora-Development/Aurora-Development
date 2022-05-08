@@ -41,40 +41,26 @@
             </nav>
         </header>
         <div class="content">
-            <div class="section" style="background-color: #4c4c4c;">
-                <div class="section-body">
-                    <div style="display: flex;">
-                        <img class="icon" src="images/people.svg" alt="PeopleLogo" style="width: 128px; height: 128px; margin-left: -80px;">
-                        <div class="icon-text" style="margin-top: calc(128px / 4);">
-                            <h1 class="section-header">Premium Plugins, Budget Price.</h1>
-                            We offer premium plugins, for everyone to use on any server they own. at budget prices!
+            <div class="section" style="background-color: #242424;">
+                <div class="section-body" style="margin-left: 0px; max-width: 100%;">
+                    <template id="product-template">
+                        <div class="product">
+                            <h1 class="product-title">Product</h1>
+                            <img src="images/list.svg" alt="product image" class="product-image">
+                            <p class="product-description" style="margin-bottom: 1rem;">
+                                A product description.
+                            </p>
+                            <a href="/buypage#product" class="btn">Buy</a>
                         </div>
+                    </template>
+                    <h1 style="margin-bottom: 1rem; text-decoration: underline;">Aurora Series</h1>
+                    <div class="auroraseries products" style="margin-bottom: 1rem;">
                     </div>
-                </div>
-            </div>
-            <div class="section" style="background-color: rgba(18, 18, 18, 1);">
-                <div class="section-body">
-                    <div class="part">
-                        <div style="display: flex;">
-                            <img class="icon" src="images/question.svg" alt="QuestionLogo" style="width: 128px; height: 128px; margin-left: -80px;">
-                            <div class="icon-text" style="margin-top: calc(128px / 4);">
-                                <h1 class="section-header">Why our premium plugins better than other premium plugins?</h1>
-                                Well our premium plugins are so much cheaper than all the others out there. and we have a excellent staff/support team
-                                <br>
-                                <br>
-                                As well all our plugins is fully customizable.
-                            </div>
-                        </div>
+
+                    <h1 style="margin-bottom: 1rem; text-decoration: underline;">cosmic Series</h1>
+                    <div class="cosmicseries products">
                     </div>
-                    <div class="part">
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <img class="icon" src="images/question.svg" alt="QuestionLogo" style="width: 128px; height: 128px; margin-left: -80px;">
-                            <div class="icon-text" style="margin-top: calc(128px / 4);">
-                                <h1 class="section-header">Can't find support?</h1>
-                                <p>Support is at our discord link: <a href="https://discord.gg/pV6w5ZYaSJ" style="color: rgb(34, 34, 189); text-decoration: underline;">discord.gg/pV6w5ZYaSJ</a></p>
-                            </div>
-                        </div>
-                    </div>
+                    <script src="js/products.js"></script>
                 </div>
             </div>
         </div>
